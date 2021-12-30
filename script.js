@@ -44,7 +44,6 @@ $(document).ready(function () {
                 cardBody.append(title, temp, humid, wind);
                 card.append(cardBody);
                 $("#today").append(card);
-
                 getForecast(searched);
                 getUVIndex(data.coord.lat, data.coord.lon);
             }
