@@ -17,7 +17,6 @@ $(document).ready(function () {
     }
 
 
-
     function searchWeather(searched) {
         $.ajax({
             type: "GET",
@@ -38,7 +37,6 @@ $(document).ready(function () {
                 var wind = $("<p>").addClass("card-text").text("Wind Speed: " + data.wind.speed + " MPH");
                 var card = $("<div>").addClass("card");
                 var img = $("<img>").attr("src", "https://openweathermap.org/img/w/" + data.weather[0].icon + ".png");
-
 
                 title.append(img);
                 cardBody.append(title, temp, humid, wind);
